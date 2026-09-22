@@ -51,9 +51,9 @@ function Home({data,cart}){
   <section className="hero premium-hero">
    <div className="hero-glow glow-one"/><div className="hero-glow glow-two"/>
    <div className="hero-copy">
-    <span className="eyebrow">{hero?.content?.eyebrow||"EASY SHOP • PREMIUM COLLECTION"}</span>
-    <h1>{hero?.title||"EASY SHOPPING"}</h1>
-    <p>{hero?.subtitle||"প্রয়োজনীয় পণ্য, সহজে আপনার দরজায়। মানসম্মত পণ্য, স্বচ্ছ মূল্য এবং নির্ভরযোগ্য ডেলিভারি—সবকিছু এক জায়গায়।"}</p>
+    <span className="eyebrow">EASY SHOP</span>
+    <h1>EASY SHOPPING</h1>
+    <p>প্রয়োজনীয় পণ্য, সহজে আপনার দরজায়।</p>
     <div className="hero-actions"><button className="primary hero-primary" onClick={()=>go("/products")}>শপিং শুরু করুন <span>→</span></button><button className="secondary" onClick={()=>go("/track-order")}>অর্ডার ট্র্যাক করুন</button></div>
    </div>
    <div className="hero-art"><div className="hero-orbit orbit-a"/><div className="hero-orbit orbit-b"/><div className="hero-card premium-card"><span className="card-label">NEW SEASON</span><div className="hero-card-icon">✦</div><strong>EASY<br/><em>SHOP</em></strong><small>SMART • SIMPLE • PREMIUM</small></div></div>

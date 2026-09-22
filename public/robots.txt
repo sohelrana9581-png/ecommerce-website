@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ecommerce-website.sohelrana9581.workers.dev/sitemap.xml

@@ -13,13 +13,13 @@ function useRoute(){const[p,setP]=useState(getPath());useEffect(()=>{const f=()=
 function useStoreData(){
  const[products,setProducts]=useState([]),[categories,setCategories]=useState([]),[settings,setSettings]=useState({}),[theme,setTheme]=useState({}),[mobile,setMobile]=useState({}),[sections,setSections]=useState([]),[loading,setLoading]=useState(true),[error,setError]=useState("");
  const load=async()=>{setLoading(true);setError("");const[p,c,s,t,m,h]=await Promise.all([
-  supabase.from("products").select("*,categories(name,slug)").eq("is_active",true).is("deleted_at",null).order("created_at",{ascending:false}),
+  supabase.from("products").select("*").eq("is_active",true).is("deleted_at",null).order("created_at",{ascending:false}),
   supabase.from("categories").select("*").eq("is_active",true).order("sort_order"),
   supabase.from("site_settings").select("settings").eq("id",true).maybeSingle(),
   supabase.from("theme_settings").select("settings").eq("id",true).maybeSingle(),
   supabase.from("mobile_settings").select("settings").eq("id",true).maybeSingle(),
   supabase.from("homepage_sections").select("*").eq("status","published").eq("is_enabled",true).order("sort_order")
- ]);if(p.error||c.error){setError("পণ্য লোড করা যায়নি। আবার চেষ্টা করুন।")}setProducts(p.data||[]);setCategories(c.data||[]);setSettings(s.data?.settings||{});setTheme(t.data?.settings||{});setMobile(m.data?.settings||{});setSections(h.data||[]);setLoading(false)};
+ ]);if(p.error){console.error("products load",p.error);setError("পণ্য লোড করা যায়নি। আবার চেষ্টা করুন।")}else{setProducts(p.data||[])}if(c.error){console.error("categories load",c.error)}setCategories(c.data||[]);setSettings(s.data?.settings||{});setTheme(t.data?.settings||{});setMobile(m.data?.settings||{});setSections(h.data||[]);setLoading(false)};
  useEffect(()=>{load();const ch=supabase.channel("store-live").on("postgres_changes",{event:"*",schema:"public",table:"products"},load).on("postgres_changes",{event:"*",schema:"public",table:"site_settings"},load).on("postgres_changes",{event:"*",schema:"public",table:"theme_settings"},load).on("postgres_changes",{event:"*",schema:"public",table:"mobile_settings"},load).on("postgres_changes",{event:"*",schema:"public",table:"homepage_sections"},load).subscribe();return()=>supabase.removeChannel(ch)},[]);
  return{products,categories,settings,theme,mobile,sections,loading,error,reload:load}
 }

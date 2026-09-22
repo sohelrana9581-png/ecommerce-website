@@ -50,7 +50,7 @@ begin
   values (
     v_user_id, trim(p_customer_name), trim(p_phone), trim(p_address), coalesce(trim(p_note),''),
     0, 0, 0, 'pending',
-    'ES-' || to_char(now(),'YYYYMMDD') || '-' || upper(substr(encode(gen_random_bytes(5),'hex'),1,6)),
+    'ES-' || to_char(now(),'YYYYMMDD') || '-' || upper(substr(replace(gen_random_uuid()::text,'-',''),1,6)),
     coalesce(trim(p_email),''), coalesce(trim(p_city_area),''), coalesce(p_delivery_method,'standard'), 'cod', 0
   )
   returning id, order_number into v_order_id, v_order_number;

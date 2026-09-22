@@ -1,3 +1,4 @@
+// Easy Shop storefront entry
 import React,{useEffect,useMemo,useState}from"react";
 import{createRoot}from"react-dom/client";
 import{supabase}from"./supabase";

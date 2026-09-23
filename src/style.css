@@ -300,3 +300,44 @@ img{max-width:100%}
  .trust-cards>div{padding:8px 10px!important;border-radius:10px!important}
  .premium-reviews{margin-top:18px!important}
 }
+
+/* Ultra-compact single product purchase section */
+.product-page-premium .premium-detail-info{max-width:560px}
+.product-page-premium .premium-detail-info>h1{margin:2px 0 4px!important}
+.product-page-premium .premium-detail-info .rating{margin:2px 0 5px!important}
+.product-page-premium .premium-detail-info .detail-price{margin:3px 0 4px!important}
+.product-page-premium .premium-detail-info .stock.big{margin:1px 0 3px!important}
+.product-page-premium .premium-variant-picker{margin:4px 0!important;gap:0!important}
+.product-page-premium .premium-variant-group{padding:5px 0!important}
+.product-page-premium .premium-variant-group .variant-label{margin-bottom:2px!important}
+.product-page-premium .premium-variant-group .variant-label span{font-size:9px!important}
+.product-page-premium .premium-variant-group .variant-options-buttons{gap:4px!important;margin-top:3px!important}
+.product-page-premium .premium-variant-group .variant-options-buttons button{min-height:32px!important;padding:5px 9px!important;font-size:11px!important;border-radius:8px!important}
+.product-page-premium .premium-buy-row{grid-template-columns:90px 1fr 1fr!important;gap:5px!important;margin:6px 0 0!important}
+.product-page-premium .premium-buy-row .qty{height:36px!important}
+.product-page-premium .premium-buy-row .qty button{width:32px!important}
+.product-page-premium .premium-buy-row .qty b{min-width:30px!important}
+.product-page-premium .premium-buy-row .primary,.product-page-premium .premium-buy-row .secondary{min-height:36px!important;padding:6px 7px!important;font-size:11px!important;border-radius:8px!important;white-space:nowrap}
+@media(max-width:720px){
+ .product-page-premium .premium-detail-info>h1{font-size:20px!important;line-height:1.1!important}
+ .product-page-premium .premium-detail-info .rating{font-size:10px!important}
+ .product-page-premium .premium-detail-info .detail-price{font-size:20px!important}
+ .product-page-premium .premium-detail-info .stock.big{font-size:10px!important}
+ .product-page-premium .premium-variant-picker{margin:3px 0!important}
+ .product-page-premium .premium-variant-group{padding:4px 0!important}
+ .product-page-premium .premium-variant-group .variant-label b{font-size:10.5px!important}
+ .product-page-premium .premium-variant-group .variant-label span{display:none!important}
+ .product-page-premium .premium-variant-group .variant-options-buttons button{min-height:30px!important;padding:4px 8px!important;font-size:10px!important}
+ .product-page-premium .premium-buy-row{grid-template-columns:1fr 1fr!important;gap:4px!important;margin-top:5px!important}
+ .product-page-premium .premium-buy-row .qty{grid-column:1/-1!important;height:34px!important}
+ .product-page-premium .premium-buy-row .qty button{width:30px!important}
+ .product-page-premium .premium-buy-row .primary,.product-page-premium .premium-buy-row .secondary{min-height:34px!important;padding:5px 5px!important;font-size:10.5px!important}
+ .product-page-premium .premium-description{margin-top:8px!important;padding-top:8px!important}
+}
+@media(max-width:380px){
+ .product-page-premium .premium-detail-info>h1{font-size:19px!important}
+ .product-page-premium .premium-detail-info .detail-price{font-size:19px!important}
+ .product-page-premium .premium-variant-group .variant-options-buttons button{min-height:28px!important;padding:3px 7px!important;font-size:9.5px!important}
+ .product-page-premium .premium-buy-row .qty{height:32px!important}
+ .product-page-premium .premium-buy-row .primary,.product-page-premium .premium-buy-row .secondary{min-height:32px!important;font-size:10px!important}
+}

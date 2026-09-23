@@ -61,12 +61,7 @@ function ProductCard({p,add}){const[modal,setModal]=useState(false),[added,setAd
    <div className="category-strip-head"><div><span className="section-kicker">SHOP BY CATEGORY</span><h2>আপনার প্রয়োজনের কালেকশন</h2></div><button className="text-btn" onClick={()=>go("/products")}>সব পণ্য →</button></div>
    <div className="category-cards">{categories.slice(0,6).map((cat,i)=><button className="category-card" key={cat.id} onClick={()=>go("/category/"+cat.slug)}><div className="category-img"><img src={cat.image_url||fallback} alt={cat.name}/><span>0{i+1}</span></div><strong>{cat.name}</strong><small>কালেকশন দেখুন →</small></button>)}</div>
   </section>
-  <section className="benefit-bar reveal">
-   <div><b>🚚</b><span><strong>দেশব্যাপী ডেলিভারি</strong><small>সারা বাংলাদেশে</small></span></div>
-   <div><b>💵</b><span><strong>Cash on Delivery</strong><small>পণ্য হাতে পেয়ে পেমেন্ট</small></span></div>
-   <div><b>✓</b><span><strong>ভেরিফায়েড পণ্য</strong><small>মান যাচাই করে পাঠানো হয়</small></span></div>
-   <div><b>↩</b><span><strong>সাপোর্ট & রিটার্ন</strong><small>সহজ সমাধান ও সহায়তা</small></span></div>
-  </section>
+  
   {productSection("Featured Products",featured.length?featured:products.slice(0,8),list.find(s=>s.section_type==="products"))}
  </div>;
 }

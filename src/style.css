@@ -147,3 +147,13 @@ footer p{color:#9da6b4;font-size:12px;line-height:1.7}
 .checkout-page{padding-bottom:110px}
 .checkout-place-button{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);width:min(680px,calc(100% - 32px));z-index:1000;box-shadow:0 14px 40px rgba(0,0,0,.22);padding:16px 22px;font-size:16px}
 @media(max-width:720px){.checkout-page{padding-bottom:120px}.checkout-place-button{bottom:12px;width:calc(100% - 24px)}}
+
+
+/* Professional loading + customer actions + validation */
+.loading-screen{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 35%,#fff,#f4f5f2 58%,#eceee9);color:#111827;gap:8px}
+.brand-loader{width:92px;height:92px;position:relative;display:grid;place-items:center;margin-bottom:4px}
+.brand-loader-mark{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,#111827,#2b3648);color:#d8b775;font-size:28px;font-weight:900;letter-spacing:-.06em;box-shadow:0 15px 35px rgba(17,24,39,.18);z-index:2}
+.brand-loader-ring{position:absolute;inset:0;border:2px solid rgba(184,138,68,.18);border-top-color:#b88a44;border-radius:50%;animation:brandSpin 1s linear infinite}
+.brand-loader-name{font-size:16px;letter-spacing:.18em;font-weight:800}.brand-loader-name b{color:#b88a44}.loading-screen p{margin:0;color:#7b8491;font-size:11px;letter-spacing:.04em}
+@keyframes brandSpin{to{transform:rotate(360deg)}}
+.call-customer-btn,.call-customer-link{display:inline-flex;align-items:center;justify-content:center;gap:5px;text-decoration:none!important}.call-customer-link{margin-top:7px;color:#176b4b;font-size:11px;font-weight:800}.order-detail-actions{flex-wrap:wrap}

@@ -404,3 +404,44 @@ img{max-width:100%}
  .product-page-premium .premium-buy-row .qty{height:40px!important}
  .product-page-premium .premium-buy-row .primary,.product-page-premium .premium-buy-row .secondary{min-height:40px!important;font-size:11px!important}
 }
+/* Centered viewport variation chooser */
+.variant-modal-backdrop{
+ position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;
+ min-height:100dvh!important;display:grid!important;place-items:center!important;
+ padding:18px!important;background:rgba(15,23,42,.62)!important;
+ backdrop-filter:blur(7px)!important;z-index:999999!important;
+}
+.variant-modal{
+ position:relative!important;inset:auto!important;transform:none!important;
+ width:min(540px,calc(100vw - 28px))!important;
+ max-width:540px!important;height:auto!important;max-height:min(680px,calc(100dvh - 28px))!important;
+ margin:0!important;overflow:auto!important;background:#fff!important;
+ border:1px solid rgba(255,255,255,.8)!important;border-radius:22px!important;
+ box-shadow:0 30px 90px rgba(0,0,0,.28)!important;
+ padding:20px!important;
+}
+.variant-modal-head{display:flex!important;align-items:flex-start!important;justify-content:space-between!important;gap:12px!important;margin-bottom:14px!important}
+.variant-modal-head h2{font-size:24px!important;line-height:1.15!important;margin:4px 0 0!important}
+.variant-close{width:38px!important;height:38px!important;border-radius:50%!important;background:#f3f4f1!important;font-size:26px!important;line-height:1!important}
+.variant-modal-product{display:flex!important;align-items:center!important;gap:12px!important;padding:10px!important;border:1px solid #e7e7e2!important;border-radius:14px!important;background:#fafaf7!important;margin-bottom:12px!important}
+.variant-modal-product img{width:62px!important;height:62px!important;border-radius:10px!important;object-fit:cover!important}
+.variant-modal-product b{font-size:22px!important}
+.variant-modal-groups{display:grid!important;gap:9px!important}
+.variant-choice{padding:12px!important;border:1px solid #e4e5df!important;border-radius:14px!important;background:#fff!important}
+.variant-choice>strong{display:block!important;font-size:14px!important;margin-bottom:8px!important}
+.variant-choice .variant-options-buttons{display:flex!important;flex-wrap:wrap!important;gap:7px!important}
+.variant-choice .variant-options-buttons button{min-height:40px!important;padding:8px 13px!important;border:1px solid #d9dbd5!important;border-radius:10px!important;background:#f8f8f5!important;font-size:13px!important;font-weight:750!important}
+.variant-choice .variant-options-buttons button.selected{background:var(--primary,#111827)!important;color:#fff!important;border-color:var(--primary,#111827)!important;box-shadow:0 5px 14px rgba(0,0,0,.14)!important}
+.variant-add-confirm{margin-top:13px!important;min-height:46px!important;border-radius:11px!important;font-size:14px!important;font-weight:800!important}
+@media(max-width:720px){
+ .variant-modal-backdrop{padding:14px!important}
+ .variant-modal{width:min(500px,calc(100vw - 24px))!important;max-height:calc(100dvh - 24px)!important;padding:15px!important;border-radius:18px!important}
+ .variant-modal-head h2{font-size:20px!important}
+ .variant-close{width:34px!important;height:34px!important;font-size:23px!important}
+ .variant-modal-product img{width:54px!important;height:54px!important}
+ .variant-modal-product b{font-size:19px!important}
+ .variant-choice{padding:10px!important}
+ .variant-choice>strong{font-size:13px!important}
+ .variant-choice .variant-options-buttons button{min-height:37px!important;padding:7px 11px!important;font-size:12px!important}
+ .variant-add-confirm{min-height:43px!important;font-size:13px!important}
+}

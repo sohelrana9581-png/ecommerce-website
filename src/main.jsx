@@ -63,12 +63,6 @@ function ProductCard({p,add}){const[modal,setModal]=useState(false),[added,setAd
    <div className="category-strip-head"><div><span className="section-kicker">SHOP BY CATEGORY</span><h2>Collections for You</h2></div><button className="text-btn" onClick={()=>go("/products")}>All Products →</button></div>
    <div className="category-cards">{categories.slice(0,6).map((cat,i)=><button className="category-card" key={cat.id} onClick={()=>go("/category/"+cat.slug)}><div className="category-img"><img src={cat.image_url||fallback} alt={cat.name}/><span>0{i+1}</span></div><strong>{cat.name}</strong><small>View Collection →</small></button>)}</div>
   </section>
-  <section className="benefit-bar reveal">
-   <div><b>🚚</b><span><strong>Nationwide Delivery</strong><small>Nationwide delivery</small></span></div>
-   <div><b>💵</b><span><strong>Cash on Delivery</strong><small>পণ্য হাতে পেয়ে Payment</small></span></div>
-   <div><b>✓</b><span><strong>Verified Products</strong><small>Quality checked before dispatch</small></span></div>
-   <div><b>↩</b><span><strong>Support & Returns</strong><small>Easy support and assistance</small></span></div>
-  </section>
   {productSection("Featured Products",featured.length?featured:products.slice(0,8),list.find(s=>s.section_type==="products"))}
  </div>;
 }

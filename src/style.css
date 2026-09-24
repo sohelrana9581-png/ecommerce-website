@@ -706,5 +706,6 @@ img{max-width:100%}
 
 
 /* Sticky storefront header: announcement scrolls away, header stays at viewport top */
-.header{position:sticky!important;top:0!important;z-index:1000!important}
-.announcement{position:relative!important;z-index:1!important}
+.header{position:sticky!important;top:0!important;z-index:1000!important;}
+.announcement{position:relative!important;z-index:1!important;}
+.app-shell{overflow:visible!important;}

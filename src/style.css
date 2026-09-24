@@ -501,3 +501,9 @@ img{max-width:100%}
   .variant-choice .variant-options-buttons button{min-height:27px!important;padding:3px 6px!important;font-size:9.5px!important}
   .variant-add-confirm{min-height:33px!important}
 }
+
+/* Checkout: optional note + floating Place Order */
+.optional{font-weight:600;color:var(--muted);font-size:11px}
+.checkout-page{padding-bottom:120px!important}
+.checkout-place-button{position:fixed!important;left:50%!important;bottom:18px!important;transform:translateX(-50%)!important;z-index:2500!important;width:min(420px,calc(100vw - 32px))!important;min-height:54px!important;margin:0!important;border-radius:14px!important;box-shadow:0 14px 38px rgba(0,0,0,.24)!important}
+@media(max-width:720px){.checkout-page{padding-bottom:105px!important}.checkout-place-button{bottom:12px!important;width:calc(100vw - 24px)!important;min-height:52px!important;border-radius:13px!important}}

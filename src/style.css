@@ -539,3 +539,31 @@ img{max-width:100%}
  .floating-cart-count{min-width:28px;height:28px;font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){.floating-cart,.floating-cart-icon,.floating-cart-count,.floating-cart::after{animation:none!important}}
+
+
+/* Floating cart: left side, vertically centered */
+.floating-cart{
+  left:22px!important;
+  right:auto!important;
+  top:50%!important;
+  bottom:auto!important;
+  transform:translateY(-50%)!important;
+}
+.floating-cart:hover{
+  transform:translateY(calc(-50% - 5px)) scale(1.035)!important;
+}
+.floating-cart:active{
+  transform:translateY(-50%) scale(.98)!important;
+}
+@keyframes floatingCartFloat{
+  0%,100%{transform:translateY(-50%)}
+  50%{transform:translateY(calc(-50% - 5px))}
+}
+@media(max-width:720px){
+  .floating-cart{
+    left:12px!important;
+    right:auto!important;
+    top:50%!important;
+    bottom:auto!important;
+  }
+}

@@ -6,7 +6,7 @@ import{supabase}from"./supabase";
 import Admin from"./admin";
 import"./style.css";
 
-const money=n=>"৳"+Number(n||0).toLocaleString("bn-BD");
+const money=n=>"৳"+Number(n||0).toLocaleString("en-US");
 const fallback="https://placehold.co/800x800/f4f5f2/202020?text=Easy+Shop";
 const getPath=()=>window.location.pathname;
 const go=p=>{window.history.pushState({},'',p);window.dispatchEvent(new Event("popstate"));window.scrollTo(0,0)};

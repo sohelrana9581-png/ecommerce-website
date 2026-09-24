@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /admin/
 
 Sitemap: https://ecommerce-website.sohelrana9581.workers.dev/sitemap.xml

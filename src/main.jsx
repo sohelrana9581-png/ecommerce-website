@@ -49,16 +49,7 @@ function ProductCard({p,add}){const[modal,setModal]=useState(false),[added,setAd
    <div className="product-grid">{items.slice(0,8).map(p=><ProductCard key={p.id} p={p} add={cart.add}/>)}</div>
   </section>;
  };
- const bannerContent=banner?.content||{};
  return <div className="home">
-  <section className="store-banner reveal" style={bannerContent.image_url?{backgroundImage:`linear-gradient(90deg,rgba(17,24,39,.94),rgba(17,24,39,.55)),url(${bannerContent.image_url})`}:undefined}>
-   <div className="store-banner-copy">
-    <span className="eyebrow">{banner?.subtitle||"EASY SHOP"}</span>
-    <h1>{banner?.title||"প্রয়োজনীয় পণ্য, সহজে আপনার দরজায়।"}</h1>
-    <p>{bannerContent.text||"Easy ordering • Cash on Delivery • Nationwide delivery"}</p>
-    <button className="primary" onClick={()=>go(bannerContent.link||"/products")}>{bannerContent.button||"শপিং শুরু করুন"} <span>→</span></button>
-   </div>
-  </section>
   <section className="category-strip reveal">
    <div className="category-strip-head"><div><span className="section-kicker">SHOP BY CATEGORY</span><h2>Collections for You</h2></div><button className="text-btn" onClick={()=>go("/products")}>All Products →</button></div>
    <div className="category-cards">{categories.slice(0,6).map((cat,i)=><button className="category-card" key={cat.id} onClick={()=>go("/category/"+cat.slug)}><div className="category-img"><img src={cat.image_url||fallback} alt={cat.name}/><span>0{i+1}</span></div><strong>{cat.name}</strong><small>View Collection →</small></button>)}</div>

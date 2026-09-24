@@ -703,3 +703,8 @@ img{max-width:100%}
   .floating-cart .floating-cart-icon{width:35px!important;height:35px!important;font-size:19px!important;border-radius:9px!important}
   .floating-cart .floating-cart-count{min-width:17px!important;height:17px!important;font-size:9px!important}
 }
+
+
+/* Sticky storefront header: announcement scrolls away, header stays at viewport top */
+.header{position:sticky!important;top:0!important;z-index:1000!important}
+.announcement{position:relative!important;z-index:1!important}

@@ -205,3 +205,76 @@
   .dua-landing .dua-benefits>div{padding:13px 9px!important}
   .dua-landing .landing-checkout{margin-left:7px!important;margin-right:7px!important}
 }
+
+/* Final spacing + easier-to-fill order form */
+.dua-landing .dua-section{
+  margin-top:28px!important;
+  margin-bottom:28px!important;
+}
+.dua-landing .dua-hero + .dua-section{
+  margin-top:30px!important;
+}
+.dua-landing .dua-section + .dua-section{
+  margin-top:30px!important;
+}
+.dua-landing .landing-checkout{
+  margin-top:34px!important;
+  margin-bottom:30px!important;
+}
+.dua-landing .landing-form-grid{
+  gap:12px!important;
+}
+.dua-landing .landing-form-grid label{
+  gap:8px!important;
+}
+.dua-landing .landing-form-grid input,
+.dua-landing .landing-form-grid textarea{
+  width:100%!important;
+  min-height:54px!important;
+  padding:14px 15px!important;
+  font-size:16px!important;
+  line-height:1.45!important;
+  border:1.5px solid #cfded5!important;
+  border-radius:13px!important;
+}
+.dua-landing .landing-form-grid textarea{
+  min-height:105px!important;
+  resize:vertical!important;
+}
+.dua-landing .landing-form-grid input:focus,
+.dua-landing .landing-form-grid textarea:focus{
+  border-color:#087f5b!important;
+  box-shadow:0 0 0 3px rgba(8,127,91,.10)!important;
+}
+.dua-landing .landing-error{
+  margin:10px 0!important;
+  padding:11px 13px!important;
+  border-radius:11px!important;
+  background:#fff1ef!important;
+  color:#a32318!important;
+  border:1px solid #ffd6d0!important;
+  font-size:13px!important;
+  font-weight:700!important;
+}
+@media(max-width:520px){
+  .dua-landing .dua-section{
+    margin-top:18px!important;
+    margin-bottom:18px!important;
+  }
+  .dua-landing .dua-hero + .dua-section,
+  .dua-landing .dua-section + .dua-section{
+    margin-top:20px!important;
+  }
+  .dua-landing .landing-checkout{
+    margin-top:24px!important;
+    margin-bottom:20px!important;
+    padding-top:16px!important;
+  }
+  .dua-landing .landing-form-grid input,
+  .dua-landing .landing-form-grid textarea{
+    min-height:52px!important;
+    padding:13px 13px!important;
+    font-size:16px!important;
+  }
+  .dua-landing .landing-form-grid textarea{min-height:96px!important}
+}

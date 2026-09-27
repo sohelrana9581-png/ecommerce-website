@@ -15,7 +15,7 @@ function useRoute(){const[p,setP]=useState(getPath());useEffect(()=>{const f=()=
 function useStoreData(){
  const[products,setProducts]=useState([]),[categories,setCategories]=useState([]),[settings,setSettings]=useState({}),[theme,setTheme]=useState({}),[mobile,setMobile]=useState({}),[sections,setSections]=useState([]),[loading,setLoading]=useState(true),[error,setError]=useState("");
  const load=async()=>{setLoading(true);setError("");const[p,c,s,t,m,h,i]=await Promise.all([
-  supabase.from("products").select("*").eq("is_active",true).is("deleted_at",null).order("created_at",{ascending:false}),
+  supabase.from("products").select("id,category_id,name,slug,price,compare_price,stock,low_stock_threshold,is_featured,badge,brand,image_url,description,short_description,variants,features,is_active,deleted_at,created_at").eq("is_active",true).is("deleted_at",null).order("created_at",{ascending:false}).limit(200),
   supabase.from("categories").select("*").eq("is_active",true).order("sort_order"),
   supabase.from("site_settings").select("settings").eq("id",true).maybeSingle(),
   supabase.from("theme_settings").select("settings").eq("id",true).maybeSingle(),

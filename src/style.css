@@ -883,3 +883,165 @@ img{max-width:100%}
   .dua-landing .dua-package-grid.compact{gap:6px!important;margin:6px 0 9px!important}
   .dua-landing .dua-package-grid.compact button{min-height:54px!important}
 }
+
+
+/* Premium Dua landing v2: larger hero, tighter top/CTA spacing, visual package selector */
+.dua-landing .dua-hero{
+  padding:2px 14px 8px!important;
+  gap:14px!important;
+  align-items:center!important;
+}
+.dua-landing .dua-hero-copy{
+  padding-top:0!important;
+  margin-top:0!important;
+}
+.dua-landing .dua-badge{
+  margin-top:0!important;
+  margin-bottom:4px!important;
+  line-height:1.25!important;
+}
+.dua-landing .dua-hero-copy h1{
+  margin:0 0 5px!important;
+  line-height:1.08!important;
+}
+.dua-landing .dua-hero-copy p{
+  margin:0 0 7px!important;
+  line-height:1.45!important;
+}
+.dua-landing .dua-cta{
+  margin:2px 0 0!important;
+}
+.dua-landing .dua-hero-image{
+  margin:0!important;
+  min-height:0!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+.dua-landing .dua-hero-image img{
+  width:min(100%,560px)!important;
+  max-width:560px!important;
+  max-height:none!important;
+  height:auto!important;
+  display:block!important;
+  object-fit:contain!important;
+}
+.dua-landing .dua-hero-image span{display:none!important}
+
+/* Remove the redundant mini header inside sticker list */
+.dua-landing .dua-sticker-list-head{display:none!important}
+
+/* Product selector cards */
+.dua-landing .dua-package-grid.compact{
+  gap:9px!important;
+  margin:8px 0 13px!important;
+}
+.dua-landing .dua-package-grid.compact button{
+  min-height:78px!important;
+  padding:9px 12px!important;
+  gap:11px!important;
+  display:grid!important;
+  grid-template-columns:58px 1fr auto!important;
+  align-items:center!important;
+  text-align:left!important;
+  border:1.5px solid #d8e4dc!important;
+  box-shadow:0 4px 14px rgba(27,76,49,.06)!important;
+}
+.dua-landing .dua-package-grid.compact button img{
+  width:58px!important;
+  height:58px!important;
+  object-fit:contain!important;
+  border-radius:10px!important;
+  background:#f5faf6!important;
+  display:block!important;
+}
+.dua-landing .dua-package-grid.compact button span{
+  display:flex!important;
+  flex-direction:column!important;
+  gap:2px!important;
+  min-width:0!important;
+}
+.dua-landing .dua-package-grid.compact button span b{
+  font-size:15px!important;
+  line-height:1.25!important;
+}
+.dua-landing .dua-package-grid.compact button span small{
+  font-size:11px!important;
+  color:#708078!important;
+}
+.dua-landing .dua-package-grid.compact button strong{
+  font-size:20px!important;
+  color:#17613e!important;
+  white-space:nowrap!important;
+}
+.dua-landing .dua-package-grid.compact button.selected{
+  border-color:#23734c!important;
+  box-shadow:0 7px 20px rgba(35,115,76,.14)!important;
+}
+
+/* Checkout premium card */
+.dua-landing .landing-checkout{
+  padding:24px!important;
+  border-radius:26px!important;
+  border:1px solid #d9e7dd!important;
+  background:linear-gradient(145deg,#fff 0%,#f4faf5 100%)!important;
+  box-shadow:0 20px 60px rgba(25,72,47,.12)!important;
+}
+.dua-landing .landing-checkout-head h2{
+  font-size:34px!important;
+  letter-spacing:-.3px!important;
+}
+.dua-landing .landing-form-grid input,
+.dua-landing .landing-form-grid textarea{
+  min-height:48px!important;
+  border-radius:13px!important;
+  box-shadow:inset 0 1px 2px rgba(20,60,40,.03)!important;
+}
+.dua-landing .landing-submit{
+  min-height:62px!important;
+  font-size:19px!important;
+  border-radius:16px!important;
+  letter-spacing:.1px!important;
+}
+.dua-landing .landing-price-row{
+  border-radius:15px!important;
+  padding:14px!important;
+}
+@media(min-width:760px){
+  .dua-landing .dua-hero{
+    grid-template-columns:minmax(0,1fr) minmax(390px,1fr)!important;
+    min-height:390px!important;
+  }
+  .dua-landing .dua-hero-image img{width:min(100%,620px)!important;max-width:620px!important}
+}
+@media(max-width:520px){
+  .dua-landing .dua-hero{
+    padding:0 7px 5px!important;
+    gap:5px!important;
+  }
+  .dua-landing .dua-badge{margin-bottom:2px!important;font-size:11px!important}
+  .dua-landing .dua-hero-copy h1{font-size:30px!important;margin-bottom:4px!important}
+  .dua-landing .dua-hero-copy p{font-size:13px!important;margin-bottom:5px!important}
+  .dua-landing .dua-cta{margin-top:1px!important}
+  .dua-landing .dua-hero-image img{
+    width:100%!important;
+    max-width:430px!important;
+    max-height:330px!important;
+  }
+  .dua-landing .landing-checkout{
+    padding:13px 10px!important;
+    border-radius:20px!important;
+  }
+  .dua-landing .landing-checkout-head h2{font-size:28px!important}
+  .dua-landing .dua-package-grid.compact button{
+    min-height:72px!important;
+    grid-template-columns:52px 1fr auto!important;
+    padding:8px!important;
+  }
+  .dua-landing .dua-package-grid.compact button img{
+    width:52px!important;height:52px!important;
+  }
+  .dua-landing .dua-package-grid.compact button span b{font-size:13px!important}
+  .dua-landing .dua-package-grid.compact button span small{font-size:10px!important}
+  .dua-landing .dua-package-grid.compact button strong{font-size:18px!important}
+}

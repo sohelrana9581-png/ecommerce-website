@@ -755,3 +755,15 @@ img{max-width:100%}
 
 /* Compact Dua Sticker landing page */
 .dua-landing .dua-section{padding:38px 16px}.dua-landing .dua-hero{padding:28px 16px}.dua-landing .dua-benefits{gap:12px}.dua-landing .dua-review-grid{gap:12px}.dua-landing .dua-order-form{padding:20px;max-width:760px}.dua-package-grid.compact{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}.dua-package-grid.compact button{min-height:58px;padding:10px 14px;border:1px solid #dfe5df;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:space-between;gap:10px;cursor:pointer;font:inherit}.dua-package-grid.compact button.selected{border-color:#198754;box-shadow:0 0 0 2px rgba(25,135,84,.12);background:#f4fbf6}.dua-package-grid.compact span{font-weight:700;font-size:15px}.dua-package-grid.compact b{font-size:18px;color:#137a43}.dua-landing .dua-collection,.dua-landing .dua-umrah{padding-top:32px;padding-bottom:32px}.dua-landing .dua-footer{padding:28px 16px}@media(max-width:640px){.dua-landing .dua-section{padding:28px 12px}.dua-landing .dua-hero{padding:20px 12px}.dua-landing .dua-order-form{padding:14px}.dua-package-grid.compact{gap:7px}.dua-package-grid.compact button{padding:9px 10px;min-height:52px}.dua-package-grid.compact span{font-size:13px}.dua-package-grid.compact b{font-size:16px}}
+
+/* Compact Dua sticker collection list */
+.dua-sticker-list{width:min(920px,100%);margin:22px auto 30px;text-align:left;background:rgba(255,255,255,.82);border:1px solid #e4e9e1;border-radius:18px;padding:14px;box-shadow:0 10px 28px rgba(25,47,35,.045)}
+.dua-sticker-list-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 5px 12px;border-bottom:1px solid #e8ece7}
+.dua-sticker-list-head span{font-family:"Noto Serif Bengali","Noto Sans Bengali",serif;font-size:17px;font-weight:900;color:#1c5a40}
+.dua-sticker-list-head small{font-size:10px;color:#7b877f}
+.dua-sticker-list ol{list-style:none;margin:10px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 8px;counter-reset:dua}
+.dua-sticker-list li{min-height:42px;display:flex;align-items:center;gap:9px;padding:8px 10px;border:1px solid #edf0eb;border-radius:11px;background:#fcfdfb;transition:.18s}
+.dua-sticker-list li:hover{border-color:#cfe0d3;background:#f5faf6}
+.dua-sticker-list li>span{flex:none;width:27px;height:27px;border-radius:8px;display:grid;place-items:center;background:#edf6ef;color:#28704c;font:800 10px/1 Inter,ui-sans-serif,sans-serif}
+.dua-sticker-list li b{font-family:"Noto Serif Bengali","Noto Sans Bengali",serif;font-size:13px;line-height:1.35;font-weight:750;color:#30443a}
+@media(max-width:640px){.dua-sticker-list{margin:17px auto 24px;padding:10px;border-radius:15px}.dua-sticker-list-head{padding:3px 3px 9px}.dua-sticker-list-head span{font-size:15px}.dua-sticker-list-head small{font-size:9px}.dua-sticker-list ol{grid-template-columns:1fr;gap:5px;margin-top:8px}.dua-sticker-list li{min-height:38px;padding:7px 8px}.dua-sticker-list li>span{width:25px;height:25px;font-size:9px}.dua-sticker-list li b{font-size:12px}}

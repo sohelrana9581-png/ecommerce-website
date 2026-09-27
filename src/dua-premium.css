@@ -1,0 +1,207 @@
+
+/* Dua Sticker Landing — premium visual layer */
+.dua-landing{
+  --landing-primary:#087f5b!important;
+  --landing-primary-2:#0b9b72!important;
+  --landing-deep:#123c2e!important;
+  --landing-gold:#d6a84f!important;
+  --landing-cream:#fffaf0!important;
+  --landing-mint:#effbf5!important;
+  position:relative!important;
+  overflow:hidden!important;
+  background:
+    radial-gradient(circle at 8% 8%,rgba(214,168,79,.14),transparent 24%),
+    radial-gradient(circle at 94% 22%,rgba(11,155,114,.13),transparent 28%),
+    linear-gradient(180deg,#fffdf8 0%,#f5fbf7 48%,#fff 100%)!important;
+}
+.dua-landing:before,
+.dua-landing:after{
+  content:"";position:absolute;z-index:0;pointer-events:none;border-radius:50%;filter:blur(2px);
+}
+.dua-landing:before{width:260px;height:260px;right:-130px;top:420px;background:rgba(214,168,79,.09)}
+.dua-landing:after{width:220px;height:220px;left:-110px;top:980px;background:rgba(8,127,91,.07)}
+.dua-landing>*{position:relative;z-index:1}
+
+/* Hero: remove excessive top whitespace and make the first image visually tighter */
+.dua-landing .dua-hero{
+  position:relative!important;
+  margin:0 auto!important;
+  padding:0 20px 14px!important;
+  min-height:390px!important;
+  gap:18px!important;
+  border:1px solid rgba(8,127,91,.10)!important;
+  border-radius:0 0 34px 34px!important;
+  background:
+    radial-gradient(circle at 76% 35%,rgba(214,168,79,.22),transparent 27%),
+    linear-gradient(135deg,#fffdf7 0%,#f3fbf7 52%,#fff8e8 100%)!important;
+  box-shadow:0 16px 50px rgba(18,60,46,.08)!important;
+}
+.dua-landing .dua-hero-copy{padding:0!important;margin:0!important}
+.dua-landing .dua-badge{
+  display:inline-flex!important;align-items:center!important;
+  padding:7px 12px!important;border-radius:999px!important;
+  background:rgba(8,127,91,.08)!important;
+  border:1px solid rgba(8,127,91,.13)!important;
+  color:var(--landing-primary)!important;
+  margin:0 0 7px!important;
+}
+.dua-landing .dua-hero-copy h1{
+  color:var(--landing-deep)!important;
+  text-shadow:0 2px 0 rgba(255,255,255,.7)!important;
+  margin:0 0 8px!important;
+}
+.dua-landing .dua-hero-copy p{margin:0 0 10px!important;color:#52685e!important}
+.dua-landing .dua-hero-copy p b{color:var(--landing-primary)!important}
+.dua-landing .dua-cta{
+  background:linear-gradient(135deg,var(--landing-primary),var(--landing-primary-2))!important;
+  border:1px solid rgba(255,255,255,.28)!important;
+  box-shadow:0 12px 28px rgba(8,127,91,.22),inset 0 1px 0 rgba(255,255,255,.25)!important;
+}
+.dua-landing .dua-hero-image{
+  min-height:0!important;margin:0!important;display:flex!important;
+  align-items:center!important;justify-content:center!important;
+  overflow:hidden!important;border-radius:28px!important;
+}
+.dua-landing .dua-hero-image img{
+  width:min(100%,620px)!important;
+  height:430px!important;
+  max-height:430px!important;
+  object-fit:cover!important;
+  object-position:center 78%!important;
+  transform:translateY(-10px) scale(1.045)!important;
+  transform-origin:center center!important;
+  filter:drop-shadow(0 22px 30px rgba(18,60,46,.13))!important;
+}
+/* Desktop colorful visual accents */
+@media(min-width:760px){
+  .dua-landing .dua-hero{
+    grid-template-columns:minmax(0,1fr) minmax(420px,1fr)!important;
+  }
+  .dua-landing .dua-hero-image:before{
+    content:"";position:absolute;width:330px;height:330px;border-radius:50%;
+    background:radial-gradient(circle,#ffe5a8 0%,rgba(255,229,168,.18) 48%,transparent 70%);
+    z-index:-1;
+  }
+}
+
+/* Sections */
+.dua-landing .dua-section{
+  position:relative!important;
+  margin:18px auto!important;
+  padding:28px 22px!important;
+  border:1px solid rgba(8,127,91,.09)!important;
+  border-radius:28px!important;
+  background:rgba(255,255,255,.86)!important;
+  box-shadow:0 14px 42px rgba(18,60,46,.055)!important;
+  backdrop-filter:blur(8px)!important;
+}
+.dua-landing .dua-section:nth-of-type(2n){
+  background:linear-gradient(145deg,#fffdf8,#f0faf5)!important;
+}
+.dua-landing .dua-section>h2{
+  color:var(--landing-deep)!important;
+  letter-spacing:-.35px!important;
+}
+.dua-landing .section-kicker{color:var(--landing-primary)!important}
+.dua-landing .dua-sticker-list{
+  border:1px solid #e2eee7!important;
+  background:linear-gradient(145deg,#fff,#f5fbf7)!important;
+  box-shadow:0 10px 28px rgba(18,60,46,.06)!important;
+}
+.dua-landing .dua-sticker-list li{
+  border:1px solid #e3eee8!important;
+  background:#fff!important;
+  box-shadow:0 4px 10px rgba(18,60,46,.035)!important;
+}
+.dua-landing .dua-sticker-list li span{
+  background:linear-gradient(135deg,var(--landing-primary),var(--landing-primary-2))!important;
+  color:#fff!important;
+}
+.dua-landing .dua-package-image{
+  filter:drop-shadow(0 18px 28px rgba(18,60,46,.13))!important;
+}
+
+/* Benefits: richer color without becoming gaudy */
+.dua-landing .dua-benefits>div{
+  border:1px solid rgba(8,127,91,.10)!important;
+  background:linear-gradient(145deg,#fff,#f3fbf7)!important;
+  box-shadow:0 10px 24px rgba(18,60,46,.07)!important;
+  transition:transform .2s ease,box-shadow .2s ease!important;
+}
+.dua-landing .dua-benefits>div:nth-child(2n){background:linear-gradient(145deg,#fff,#fff8e9)!important}
+.dua-landing .dua-benefits>div:hover{transform:translateY(-4px)!important;box-shadow:0 16px 30px rgba(18,60,46,.11)!important}
+.dua-landing .dua-benefits>div>span{filter:drop-shadow(0 5px 8px rgba(18,60,46,.10))}
+
+/* Reviews */
+.dua-landing .dua-rating{color:#d29d32!important}
+.dua-landing .dua-review-track article{
+  border:1px solid #e1ece6!important;
+  background:linear-gradient(145deg,#fff,#f7fbf8)!important;
+  box-shadow:0 10px 25px rgba(18,60,46,.06)!important;
+}
+.dua-landing .stars{color:#d29d32!important}
+
+/* Checkout */
+.dua-landing .landing-checkout{
+  position:relative!important;
+  border:1px solid #d5e8dc!important;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(214,168,79,.13),transparent 25%),
+    linear-gradient(145deg,#fff,#f0faf4)!important;
+  box-shadow:0 24px 65px rgba(18,60,46,.12)!important;
+}
+.dua-landing .landing-checkout:before{
+  content:"";position:absolute;left:18px;right:18px;top:0;height:3px;border-radius:0 0 5px 5px;
+  background:linear-gradient(90deg,#087f5b,#d6a84f,#087f5b)!important;
+}
+.dua-landing .dua-package-grid.compact button{
+  border-color:#d8e8df!important;
+  background:linear-gradient(145deg,#fff,#f8fcf9)!important;
+}
+.dua-landing .dua-package-grid.compact button.selected{
+  border-color:#087f5b!important;
+  background:linear-gradient(145deg,#edfbf3,#fff8e9)!important;
+  box-shadow:0 9px 24px rgba(8,127,91,.13)!important;
+}
+.dua-landing .dua-package-grid.compact button strong{color:var(--landing-primary)!important}
+.dua-landing .landing-price-row{
+  background:linear-gradient(90deg,#edf9f2,#fff9eb)!important;
+  border-color:#dcebe2!important;
+}
+.dua-landing .landing-submit{
+  background:linear-gradient(135deg,#087f5b,#0b9b72)!important;
+  box-shadow:0 14px 30px rgba(8,127,91,.22)!important;
+}
+
+/* Floating CTA */
+.dua-landing .landing-floating-cta{
+  background:rgba(255,255,255,.94)!important;
+  border:1px solid rgba(8,127,91,.16)!important;
+  box-shadow:0 15px 45px rgba(18,60,46,.20)!important;
+}
+.dua-landing .landing-floating-cta .primary{
+  background:linear-gradient(135deg,#087f5b,#0b9b72)!important;
+}
+
+/* Mobile */
+@media(max-width:520px){
+  .dua-landing .dua-hero{
+    padding:0 8px 7px!important;
+    gap:3px!important;
+    border-radius:0 0 24px 24px!important;
+    min-height:0!important;
+  }
+  .dua-landing .dua-hero-copy h1{font-size:29px!important;line-height:1.08!important}
+  .dua-landing .dua-hero-copy p{font-size:13px!important;line-height:1.4!important}
+  .dua-landing .dua-hero-image{border-radius:20px!important;margin-top:-3px!important}
+  .dua-landing .dua-hero-image img{
+    width:calc(100% + 10px)!important;
+    height:285px!important;
+    max-height:285px!important;
+    object-position:center 82%!important;
+    transform:translateY(-13px) scale(1.07)!important;
+  }
+  .dua-landing .dua-section{margin:11px 7px!important;padding:18px 10px!important;border-radius:21px!important}
+  .dua-landing .dua-benefits>div{padding:13px 9px!important}
+  .dua-landing .landing-checkout{margin-left:7px!important;margin-right:7px!important}
+}

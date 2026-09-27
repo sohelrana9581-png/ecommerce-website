@@ -1045,3 +1045,39 @@ img{max-width:100%}
   .dua-landing .dua-package-grid.compact button span small{font-size:10px!important}
   .dua-landing .dua-package-grid.compact button strong{font-size:18px!important}
 }
+
+
+/* Dua landing v3: compact order summary, refined typography and floating CTA */
+.dua-landing{color:var(--landing-body);padding-bottom:88px}
+.dua-landing .dua-hero-copy h1{color:var(--landing-headline)!important;letter-spacing:-.5px}
+.dua-landing .dua-hero-copy p,.dua-landing .dua-section>p{color:var(--landing-body)!important}
+.dua-landing .dua-hero-copy p b{color:var(--landing-primary)!important}
+.dua-landing .section-kicker{color:var(--landing-primary)!important}
+.dua-landing .dua-cta,.dua-landing .dua-section>.primary,.dua-landing .landing-submit,.landing-floating-cta .primary{background:linear-gradient(135deg,var(--landing-primary),#238257)!important}
+.dua-landing .landing-price-row{display:grid!important;grid-template-columns:minmax(0,1.6fr) minmax(100px,.8fr) minmax(110px,.8fr)!important;align-items:center!important;gap:0!important;padding:10px 12px!important;margin:8px 0!important}
+.dua-landing .landing-price-row>div{display:flex!important;flex-direction:column!important;gap:2px!important;padding:0 12px!important;border-right:1px solid #d8e6dc!important;min-width:0!important}
+.dua-landing .landing-price-row>div:first-child{padding-left:2px!important}
+.dua-landing .landing-price-row>div:last-child{border-right:0!important;padding-right:2px!important}
+.dua-landing .landing-price-row span{font-size:10px!important;color:#718078!important;font-weight:700!important}
+.dua-landing .landing-price-row b{font-size:12px!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+.dua-landing .landing-price-row strong{font-size:15px!important;color:var(--landing-primary)!important;white-space:nowrap!important}
+.dua-landing .landing-price-row .landing-total{align-items:flex-end!important;text-align:right!important}
+.dua-landing .landing-price-row .landing-total strong{font-size:21px!important}
+.dua-landing .landing-floating-cta{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:9999;width:min(94vw,560px);padding:5px;border-radius:18px;background:rgba(255,255,255,.92);box-shadow:0 12px 38px rgba(15,55,35,.22);backdrop-filter:blur(12px);border:1px solid rgba(31,106,71,.14)}
+.dua-landing .landing-floating-cta .primary{width:100%!important;min-height:54px!important;border-radius:14px!important;font-size:17px!important;font-weight:900!important;box-shadow:0 7px 20px rgba(23,97,62,.18)!important}
+.dua-landing .landing-floating-cta .is-place-order{box-shadow:0 8px 24px rgba(23,97,62,.24)!important}
+@media(max-width:520px){
+ .dua-landing{padding-bottom:82px}
+ .dua-landing .landing-price-row{grid-template-columns:1.35fr .75fr .75fr!important;padding:8px 6px!important}
+ .dua-landing .landing-price-row>div{padding:0 7px!important}
+ .dua-landing .landing-price-row b{font-size:11px!important}
+ .dua-landing .landing-price-row strong{font-size:14px!important}
+ .dua-landing .landing-price-row .landing-total strong{font-size:19px!important}
+ .dua-landing .landing-floating-cta{bottom:9px;width:calc(100vw - 18px);border-radius:16px}
+ .dua-landing .landing-floating-cta .primary{min-height:50px!important;font-size:15px!important}
+ .dua-landing .dua-hero-copy h1{color:var(--landing-headline)!important}
+ .dua-landing .dua-hero-copy p{color:var(--landing-body)!important}
+}
+.landing-control-box{margin-top:18px;padding:18px;border:1px solid #dbe6de;border-radius:16px;background:#f7fbf8}
+.landing-control-box>h3{margin:0 0 4px;color:#173d2c}
+.landing-control-box>p{margin:0 0 14px;color:#6b786f;font-size:12px}

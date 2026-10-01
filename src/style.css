@@ -1081,3 +1081,4 @@ img{max-width:100%}
 .landing-control-box{margin-top:18px;padding:18px;border:1px solid #dbe6de;border-radius:16px;background:#f7fbf8}
 .landing-control-box>h3{margin:0 0 4px;color:#173d2c}
 .landing-control-box>p{margin:0 0 14px;color:#6b786f;font-size:12px}
+.dashboard-top-panels{align-items:stretch;gap:18px;margin-bottom:18px}.dashboard-top-panels>.panel{margin-bottom:0}.dashboard-recent-orders .panel{margin-bottom:18px}

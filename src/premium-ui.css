@@ -18,3 +18,24 @@ html{scroll-behavior:smooth}body{background:radial-gradient(circle at 15% -10%,r
 :root{--px-gold-soft:#f7f0df;--px-blue-soft:#edf4ff;--px-green-soft:#eaf8f1}body{background:radial-gradient(circle at 8% 0,rgba(200,164,93,.07),transparent 24%),radial-gradient(circle at 94% 8%,rgba(37,99,235,.06),transparent 27%),linear-gradient(180deg,#fbfcfd 0%,#f6f7f9 100%)}.header{box-shadow:0 10px 30px rgba(15,23,42,.055)}.product-card,.summary,.form-card,.tracking-card,.review{transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease,border-color .28s ease}.product-card:hover{transform:translateY(-6px) scale(1.005)}.primary{background:linear-gradient(135deg,#0f172a 0%,#263852 100%)}.primary:hover{filter:brightness(1.06)}.secondary:hover{border-color:#b9c7dc;background:#f8fbff}.category-card,.landing-section{transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease}.category-card:hover,.landing-section:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(15,23,42,.08)}.cart-add-btn.is-added,.premium-add.is-added{animation:pxPop .42s ease}.floating-cart{animation:pxFloat 3s ease-in-out infinite,pxGlow 3s ease-in-out infinite}
 @keyframes pxPulse{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.22);opacity:1}}@keyframes pxPop{0%{transform:scale(.96)}55%{transform:scale(1.035)}100%{transform:scale(1)}}@keyframes pxGlow{0%,100%{box-shadow:0 14px 32px rgba(15,23,42,.20)}50%{box-shadow:0 18px 38px rgba(37,99,235,.18)}}
 @media(max-width:800px){.daily-visitor-card,.daily-visitors-card,.visitor-card,.visitors-card{padding:12px 13px!important}.daily-visitor-card strong,.daily-visitors-card strong,.visitor-card strong,.visitors-card strong{font-size:21px!important}}
+
+/* Daily Visitors — compact dashboard presentation */
+.dashboard-panels{align-items:start!important}
+.dashboard-panels>.panel:first-child{align-self:start!important}
+.visitor-dashboard-card{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:0!important;height:78px!important;padding:12px 14px!important;border:1px solid #e3e9f1;border-radius:14px;background:linear-gradient(135deg,#ffffff 0%,#f8fbff 100%);box-shadow:0 7px 20px rgba(15,23,42,.045);position:relative;overflow:hidden}
+.visitor-dashboard-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#2563eb,#38bdf8)}
+.visitor-main-stat{min-width:0}
+.visitor-main-stat .eyebrow{display:block;font-size:8px;line-height:1;color:#667085;letter-spacing:.1em;margin-bottom:4px}
+.visitor-number-row{display:flex;align-items:center;gap:8px}
+.visitor-number-row strong{font-size:25px!important;line-height:1;letter-spacing:-.05em;color:#101828}
+.visitor-main-stat small{display:block;margin-top:4px;font-size:9px;color:#98a2b3}
+.visitor-live{display:inline-flex!important;align-items:center;gap:4px;font-size:8px!important;letter-spacing:.06em;color:#087f5b!important;font-weight:900}
+.visitor-live:before{width:5px!important;height:5px!important}
+.visitor-date-actions{display:flex;align-items:center;gap:5px;flex-shrink:0}
+.visitor-date-actions .secondary{height:30px!important;min-width:30px!important;padding:0 9px!important;border-radius:8px!important;font-size:11px!important;font-weight:800}
+.visitor-date-actions .visitor-today-btn{min-width:52px!important}
+.dashboard-panels>.panel:first-child .panel-head{padding:13px 15px 10px}
+.dashboard-panels>.panel:first-child .panel-head h2{font-size:14px}
+.dashboard-panels>.panel:first-child .panel-count{font-size:10px;padding:3px 7px}
+@media(max-width:800px){.visitor-dashboard-card{height:72px!important;padding:10px 12px!important}.visitor-number-row strong{font-size:22px!important}.visitor-date-actions .secondary{height:28px!important;padding:0 8px!important}.visitor-date-actions .visitor-today-btn{min-width:48px!important}}
+@media(max-width:480px){.visitor-dashboard-card{gap:8px}.visitor-date-actions{gap:3px}.visitor-date-actions .secondary{min-width:27px!important;padding:0 7px!important}.visitor-date-actions .visitor-today-btn{min-width:46px!important}.visitor-main-stat small{font-size:8px}}

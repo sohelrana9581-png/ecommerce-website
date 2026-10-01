@@ -5,13 +5,14 @@ export default defineConfig({
   plugins: [
     react(),
     {
-      name: "easy-shop-admin-orders-premium-ui",
+      name: "easy-shop-premium-ui-loader",
       transform(code, id) {
-        if (id.replaceAll("\\", "/").endsWith("/src/admin.jsx")) {
-          return {
-            code: `import "./admin-orders-premium.css";\n${code}`,
-            map: null,
-          };
+        const normalized = id.replaceAll("\\", "/");
+        if (normalized.endsWith("/src/admin.jsx")) {
+          return { code: `import "./admin-orders-premium.css";\nimport "./premium-ui.css";\n${code}`, map: null };
+        }
+        if (normalized.endsWith("/src/main.jsx")) {
+          return { code: `${code}\nimport "./premium-ui.css";`, map: null };
         }
       },
     },

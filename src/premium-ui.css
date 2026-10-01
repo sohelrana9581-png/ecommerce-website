@@ -39,3 +39,12 @@ html{scroll-behavior:smooth}body{background:radial-gradient(circle at 15% -10%,r
 .dashboard-panels>.panel:first-child .panel-count{font-size:10px;padding:3px 7px}
 @media(max-width:800px){.visitor-dashboard-card{height:72px!important;padding:10px 12px!important}.visitor-number-row strong{font-size:22px!important}.visitor-date-actions .secondary{height:28px!important;padding:0 8px!important}.visitor-date-actions .visitor-today-btn{min-width:48px!important}}
 @media(max-width:480px){.visitor-dashboard-card{gap:8px}.visitor-date-actions{gap:3px}.visitor-date-actions .secondary{min-width:27px!important;padding:0 7px!important}.visitor-date-actions .visitor-today-btn{min-width:46px!important}.visitor-main-stat small{font-size:8px}}
+
+/* Single product related-products section */
+.related-products{margin:42px 0 10px!important;padding-top:8px}
+.related-products .section-head{margin-bottom:18px}
+.related-products .product-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.related-products .product-card{animation:relatedReveal .45s ease both}
+@keyframes relatedReveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.related-products .product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.related-products{margin:30px 0 4px!important}.related-products .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.related-products .section-head{margin-bottom:12px}.related-products .section-head h2{font-size:21px}.related-products .section-head p{font-size:11px}}

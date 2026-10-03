@@ -70,7 +70,7 @@
 .orders-page .order-customer-card{gap:9px;margin:18px 0}
 .orders-page .order-customer-card>div{border:1px solid #e7ebf0;background:linear-gradient(145deg,#fafbfc,#f6f8fa);border-radius:14px;padding:13px}
 .orders-page .order-customer-card b{font-size:12px}
-.orders-page .order-item-row{padding:14px 4px;border-bottom:1px solid #edf0f4}
+.orders-page .order-item-row{padding:14px 4px;border-bottom:1px solid #edf0f4}.orders-page .order-item-product{display:flex;align-items:center;gap:12px;min-width:0}.orders-page .order-item-image{width:52px;height:52px;flex:0 0 52px;border:1px solid #e5e9ef;border-radius:12px;background:#f8fafc;display:grid;place-items:center;overflow:hidden;box-shadow:0 4px 12px rgba(15,23,42,.06)}.orders-page .order-item-image img{width:100%;height:100%;object-fit:cover;display:block}.orders-page .order-item-image span{font-size:8px;font-weight:900;color:#98a2b3}.orders-page .order-item-product>span{display:grid;gap:4px;min-width:0}.orders-page .order-item-product b{display:block;white-space:pre-line;overflow-wrap:anywhere}
 .orders-page .order-item-row>b,.orders-page .order-item-row strong{font-size:13px}
 .orders-page .order-totals{padding:5px 0 0}
 .orders-page .order-totals .grand{margin-top:7px;padding:15px 14px;border:1px solid #dce8df;border-radius:14px;background:linear-gradient(135deg,#f0f8f3,#f9fcfa);color:#17613e}

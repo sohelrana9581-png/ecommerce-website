@@ -94,3 +94,44 @@
 @media(max-width:800px){.orders-page .order-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.orders-page .order-kpis>div{min-height:92px;padding:14px;border-radius:15px}.orders-page .order-kpis b{font-size:23px}.orders-page .order-toolbar{align-items:stretch}.orders-page .order-search{max-width:none;width:100%}.orders-page .order-filters{width:100%;overflow:auto;flex-wrap:nowrap}.orders-page .order-filters button{white-space:nowrap}.orders-page .panel>.panel-head{padding:16px}.orders-page .modal{border-radius:20px}.orders-page .order-detail{padding:17px}.orders-page .order-detail-top{align-items:flex-start;flex-direction:column}.orders-page .order-detail-actions{width:100%}.orders-page .order-detail-actions>*{flex:1}.orders-page .order-customer-card{grid-template-columns:1fr}.orders-page .order-customer-card .wide{grid-column:auto}.orders-page .order-edit-form{padding:16px}}
 @media(max-width:480px){.orders-page .order-kpis{grid-template-columns:1fr 1fr}.orders-page .order-kpis>div{min-height:84px;padding:12px}.orders-page .order-kpis small{font-size:8px}.orders-page .order-kpis b{font-size:21px}.orders-page .order-filters button{padding:8px 10px}.orders-page .panel>.panel-head h2{font-size:15px}.orders-page .order-detail-top h2{font-size:21px}.orders-page .modal-head{padding:14px 16px}.orders-page .order-detail{padding:15px}.orders-page .order-detail-actions{display:grid;grid-template-columns:1fr 1fr}.orders-page .order-detail-actions>*{width:100%}.orders-page .order-detail-actions .primary{grid-column:1/-1}}
 @media(prefers-reduced-motion:reduce){.orders-page,.orders-page *{animation:none!important;transition:none!important}}
+
+
+/* Order details modal — keep the full dialog inside the viewport */
+.orders-page .modal-backdrop{
+  position:fixed;
+  inset:0;
+  width:100vw;
+  height:100dvh;
+  z-index:100;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+  overflow:hidden;
+  box-sizing:border-box;
+}
+.orders-page .modal{
+  width:min(790px,100%);
+  height:min(calc(100dvh - 32px),900px);
+  max-height:calc(100dvh - 32px);
+  margin:auto;
+  padding:0;
+  overflow-y:auto;
+  overflow-x:hidden;
+  overscroll-behavior:contain;
+  -webkit-overflow-scrolling:touch;
+}
+.orders-page .modal-head{
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+@media(max-width:720px){
+  .orders-page .modal-backdrop{padding:8px;align-items:center}
+  .orders-page .modal{
+    width:100%;
+    height:calc(100dvh - 16px);
+    max-height:calc(100dvh - 16px);
+    border-radius:20px;
+  }
+}

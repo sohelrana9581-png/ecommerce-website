@@ -1082,3 +1082,43 @@ img{max-width:100%}
 .landing-control-box>h3{margin:0 0 4px;color:#173d2c}
 .landing-control-box>p{margin:0 0 14px;color:#6b786f;font-size:12px}
 .dashboard-top-panels{align-items:stretch;gap:18px;margin-bottom:18px}.dashboard-top-panels>.panel{margin-bottom:0}.dashboard-recent-orders .panel{margin-bottom:18px}
+
+/* Final fix: admin order modal centered in the actual viewport */
+.modal-backdrop{
+  position:fixed!important;
+  inset:0!important;
+  width:100vw!important;
+  height:100vh!important;
+  min-height:100dvh!important;
+  margin:0!important;
+  padding:16px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  box-sizing:border-box!important;
+  overflow:auto!important;
+  z-index:10000!important;
+}
+.modal-backdrop>.modal{
+  position:relative!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  transform:none!important;
+  margin:0 auto!important;
+  width:min(720px,calc(100vw - 32px))!important;
+  max-width:720px!important;
+  max-height:calc(100dvh - 32px)!important;
+  box-sizing:border-box!important;
+  overflow:auto!important;
+  flex:0 1 auto!important;
+}
+@media(max-width:720px){
+  .modal-backdrop{padding:10px!important}
+  .modal-backdrop>.modal{
+    width:calc(100vw - 20px)!important;
+    max-height:calc(100dvh - 20px)!important;
+    margin:0 auto!important;
+  }
+}

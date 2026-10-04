@@ -135,3 +135,26 @@
     border-radius:20px;
   }
 }
+
+
+/* Exact viewport centering for the order details dialog */
+.orders-page .modal-backdrop{
+  position:fixed!important;
+  inset:0!important;
+  width:100vw!important;
+  height:100dvh!important;
+  min-width:100vw!important;
+  min-height:100dvh!important;
+}
+.orders-page .modal{
+  position:fixed!important;
+  left:50vw!important;
+  top:50dvh!important;
+  margin:0!important;
+  transform:translate(-50%,-50%)!important;
+  animation:oaModalCentered .28s cubic-bezier(.2,.8,.2,1)!important;
+}
+@keyframes oaModalCentered{
+  from{opacity:0;transform:translate(-50%,calc(-50% + 18px)) scale(.98)}
+  to{opacity:1;transform:translate(-50%,-50%) scale(1)}
+}

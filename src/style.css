@@ -1122,3 +1122,6 @@ img{max-width:100%}
     margin:0 auto!important;
   }
 }
+
+/* Keep order update controls easy to find on long edit forms */
+.order-edit-form{padding-bottom:4px}.order-edit-form .modal-actions{position:sticky;bottom:-20px;z-index:5;display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap;margin:8px -2px -4px;padding:12px 2px 10px;background:linear-gradient(180deg,rgba(255,255,255,.88),#fff 28%);border-top:1px solid #e5e7eb}.order-save-button{min-width:190px;min-height:44px;font-weight:800;box-shadow:0 4px 12px rgba(17,24,39,.12)}@media(max-width:560px){.order-edit-form .modal-actions{bottom:-20px;display:grid;grid-template-columns:1fr}.order-edit-form .modal-actions button{width:100%}.order-save-button{min-width:0}}

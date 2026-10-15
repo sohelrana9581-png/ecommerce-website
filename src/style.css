@@ -1135,3 +1135,70 @@ img{max-width:100%}
 .modal.order-detail-modal .modal-head button{width:38px;height:38px;border-radius:11px;background:#f3f4f6;font-size:25px;line-height:1;display:grid;place-items:center;flex-shrink:0}
 .modal.order-detail-modal .modal-head button:hover{background:#e5e7eb}
 @media(max-width:700px){.modal-backdrop.order-detail-modal-backdrop{padding:10px;align-items:center}.modal.order-detail-modal{width:calc(100vw - 20px);max-width:none;max-height:calc(100dvh - 20px);padding:18px;border-radius:16px}.modal.order-detail-modal .modal-head{top:-18px;margin:-18px -18px 16px;padding:14px 18px;background:rgba(255,255,255,.98);border-radius:16px 16px 0 0}.modal.order-detail-modal .modal-head h2{font-size:18px}}
+
+
+/* Premium order detail workspace: wider layout, clean hierarchy, always-visible save action */
+.modal-backdrop.order-detail-modal-backdrop{padding:16px;place-items:center;overflow:auto}
+.modal.order-detail-modal{width:min(1460px,calc(100vw - 32px));max-width:1460px;max-height:calc(100dvh - 32px);padding:24px 28px 22px;border-radius:22px;background:#fff;box-shadow:0 32px 100px rgba(15,23,42,.30);overflow:auto}
+.modal.order-detail-modal .modal-head{top:-24px;margin:-24px -28px 18px;padding:17px 28px 15px;background:rgba(255,255,255,.97);border-bottom:1px solid #e9edf2}
+.modal.order-detail-modal .order-detail{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.8fr);gap:18px 22px;align-items:start}
+.modal.order-detail-modal .order-detail-top{grid-column:1/-1;align-items:center;padding:0 0 16px}
+.modal.order-detail-modal .order-customer-card{grid-column:1/-1;grid-template-columns:minmax(160px,.7fr) minmax(180px,.8fr) minmax(280px,1.5fr);gap:12px;margin:0}
+.modal.order-detail-modal .order-customer-card .wide{grid-column:auto}
+.modal.order-detail-modal .order-customer-card>div{padding:14px 16px;background:#f8fafc;border-color:#e8edf3;min-width:0}
+.modal.order-detail-modal .order-customer-card b{display:block;overflow-wrap:anywhere;line-height:1.5;font-size:13px}
+.modal.order-detail-modal .order-detail>h3{margin:2px 0 -8px;font-size:15px}
+.modal.order-detail-modal .order-detail>.order-item-row,.modal.order-detail-modal .order-detail>.order-totals{grid-column:1}
+.modal.order-detail-modal .order-detail>.order-totals{grid-column:2;grid-row:auto;align-self:start;margin-top:0;padding:15px 18px;background:#f8fafc;border:1px solid #e8edf3;border-radius:15px}
+.modal.order-detail-modal .order-detail>.quick-status{grid-column:1/-1;margin:0}
+.modal.order-detail-modal .order-detail-actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.modal.order-detail-modal .order-detail-actions button,.modal.order-detail-modal .order-detail-actions a{min-height:42px;display:inline-flex;align-items:center;justify-content:center}
+.modal.order-detail-modal .order-item-row{align-items:center;padding:12px 0}
+.modal.order-detail-modal .order-item-product{min-width:0}
+.modal.order-detail-modal .order-item-product>span{min-width:0}
+.modal.order-detail-modal .order-item-product b{display:block;overflow-wrap:anywhere}
+.modal.order-detail-modal .order-item-product small{font-size:11px}
+.modal.order-detail-modal .order-item-image{width:54px;height:54px;border-radius:12px;overflow:hidden;flex:none;background:#f1f3f5}
+.modal.order-detail-modal .order-item-image img{width:100%;height:100%;object-fit:cover}
+.modal.order-detail-modal .order-totals .grand{font-size:20px}
+.modal.order-detail-modal .order-edit-form{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;padding-bottom:2px}
+.modal.order-detail-modal .order-edit-head,.modal.order-detail-modal .order-edit-items,.modal.order-detail-modal .order-edit-form>.form-grid,.modal.order-detail-modal .order-edit-form>.field,.modal.order-detail-modal .order-edit-form>.modal-actions{grid-column:1/-1}
+.modal.order-detail-modal .order-edit-head{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:12px;background:#f8fafc;border:1px solid #e8edf3}
+.modal.order-detail-modal .order-edit-items{border:1px solid #e4e9f0;border-radius:16px;padding:16px;background:#fbfcfe;display:grid;gap:12px}
+.modal.order-detail-modal .order-edit-section-head{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.modal.order-detail-modal .order-edit-section-head b{font-size:15px}
+.modal.order-detail-modal .order-edit-section-head small{display:block;color:#6b7280;font-size:11px;margin-top:4px}
+.modal.order-detail-modal .order-edit-section-head>span{white-space:nowrap;font-size:11px;font-weight:800;background:#e9eef5;padding:7px 10px;border-radius:99px}
+.modal.order-detail-modal .order-edit-item{display:grid;grid-template-columns:minmax(210px,1.1fr) minmax(180px,1fr) minmax(150px,.65fr);gap:14px;align-items:center;padding:13px;background:#fff;border:1px solid #e9edf2;border-radius:13px}
+.modal.order-detail-modal .order-edit-item-product{display:flex;align-items:center;gap:11px;min-width:0}
+.modal.order-detail-modal .order-edit-item-product>div:last-child{min-width:0}
+.modal.order-detail-modal .order-edit-item-product b{display:block;font-size:12px;overflow-wrap:anywhere}
+.modal.order-detail-modal .order-edit-item-product small{display:block;color:#6b7280;font-size:10px;margin-top:5px}
+.modal.order-detail-modal .order-edit-variant-grid,.modal.order-detail-modal .order-edit-price-grid{display:grid;grid-template-columns:1fr;gap:8px;min-width:0}
+.modal.order-detail-modal .order-edit-item .field{margin:0;gap:5px;font-size:11px}
+.modal.order-detail-modal .order-edit-item input,.modal.order-detail-modal .order-edit-item select{width:100%;min-width:0;height:40px;padding:8px 10px;border:1px solid #d8dee8;border-radius:9px;background:#fff;font-size:12px}
+.modal.order-detail-modal .order-edit-form>.field{margin:0}
+.modal.order-detail-modal .order-edit-form .modal-actions{position:sticky;bottom:-22px;z-index:20;margin:0 -4px -4px;padding:14px 4px 8px;background:linear-gradient(180deg,rgba(255,255,255,.84),#fff 35%);border-top:1px solid #e6eaf0;display:flex;justify-content:flex-end;gap:10px}
+.modal.order-detail-modal .order-save-button{min-width:220px;min-height:48px;border-radius:12px;font-size:14px}
+.modal.order-detail-modal .order-edit-form .form-grid{gap:0 16px}
+@media(max-width:1050px){
+ .modal.order-detail-modal .order-detail{grid-template-columns:minmax(0,1fr)}
+ .modal.order-detail-modal .order-detail>.order-totals{grid-column:1}
+ .modal.order-detail-modal .order-edit-item{grid-template-columns:minmax(180px,1fr) minmax(170px,1fr)}
+ .modal.order-detail-modal .order-edit-price-grid{grid-column:1/-1;grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+ .modal-backdrop.order-detail-modal-backdrop{padding:8px}
+ .modal.order-detail-modal{width:calc(100vw - 16px);max-height:calc(100dvh - 16px);padding:16px;border-radius:16px}
+ .modal.order-detail-modal .modal-head{top:-16px;margin:-16px -16px 14px;padding:13px 16px;background:rgba(255,255,255,.98)}
+ .modal.order-detail-modal .order-detail-top{align-items:flex-start;flex-direction:column}
+ .modal.order-detail-modal .order-detail-actions{width:100%;justify-content:stretch}
+ .modal.order-detail-modal .order-detail-actions button,.modal.order-detail-modal .order-detail-actions a{flex:1}
+ .modal.order-detail-modal .order-customer-card{grid-template-columns:1fr 1fr}
+ .modal.order-detail-modal .order-customer-card .wide{grid-column:1/-1}
+ .modal.order-detail-modal .order-edit-form{grid-template-columns:1fr}
+ .modal.order-detail-modal .order-edit-item{grid-template-columns:1fr}
+ .modal.order-detail-modal .order-edit-price-grid{grid-column:auto}
+ .modal.order-detail-modal .order-edit-form .modal-actions{bottom:-16px;display:grid;grid-template-columns:1fr}
+ .modal.order-detail-modal .order-save-button{width:100%;min-width:0}
+}

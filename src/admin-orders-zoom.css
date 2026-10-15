@@ -16,30 +16,30 @@
   border-radius:18px;
   min-height:104px;
 }
-.orders-page .order-kpis small{font-size:12px;letter-spacing:.04em}
+.orders-page .order-kpis small{font-size:14px;letter-spacing:.02em}
 .orders-page .order-kpis b{font-size:clamp(28px,2.2vw,36px);margin-top:10px;line-height:1.1}
 .orders-page .order-toolbar{gap:14px;margin-bottom:20px}
 .orders-page .order-search{min-height:52px;padding:0 16px;border-radius:14px}
 .orders-page .order-search span{font-size:24px}
-.orders-page .order-search input{font-size:15px}
+.orders-page .order-search input{font-size:17px}
 .orders-page .order-filters{gap:6px;padding:5px}
-.orders-page .order-filters button{font-size:13px;padding:10px 14px;border-radius:10px}
+.orders-page .order-filters button{font-size:15px;padding:11px 15px;border-radius:10px}
 .orders-page .panel{padding:24px;border-radius:20px;margin-bottom:22px}
 .orders-page .panel-head{margin-bottom:18px}
-.orders-page .panel-head h2{font-size:20px}
+.orders-page .panel-head h2{font-size:23px}
 .orders-page .panel-count{font-size:13px;padding:5px 10px}
-.orders-page .premium-order-table table{min-width:1060px;font-size:14px}
-.orders-page .premium-order-table th{font-size:13px;padding:15px 14px}
-.orders-page .premium-order-table td{padding:17px 14px;font-size:14px}
+.orders-page .premium-order-table table{min-width:1060px;font-size:16px}
+.orders-page .premium-order-table th{font-size:15px;padding:17px 15px}
+.orders-page .premium-order-table td{padding:19px 15px;font-size:16px}
 .orders-page .customer-order-cell{gap:5px}
-.orders-page .customer-order-cell b{font-size:15px}
-.orders-page .customer-order-cell span{font-size:13px;line-height:1.5}
-.orders-page .order-no{font-size:14px}
-.orders-page .order-no+small,.orders-page .premium-order-table td small{font-size:12px}
-.orders-page .view-order{font-size:13px;padding:9px 12px;border-radius:9px}
-.orders-page .status{font-size:12px;padding:7px 10px}
+.orders-page .customer-order-cell b{font-size:17px}
+.orders-page .customer-order-cell span{font-size:15px;line-height:1.55}
+.orders-page .order-no{font-size:16px}
+.orders-page .order-no+small,.orders-page .premium-order-table td small{font-size:14px}
+.orders-page .view-order{font-size:15px;padding:10px 13px;border-radius:9px}
+.orders-page .status{font-size:14px;padding:8px 11px}
 .orders-page .empty.small{padding:46px 20px}
-.orders-page .empty.small h3{font-size:18px}
+.orders-page .empty.small h3{font-size:21px}
 @media(max-width:1100px){
  .admin-main:has(.orders-page){padding:24px}
  .orders-page .order-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -50,11 +50,11 @@
  .admin-main:has(.orders-page){padding:16px 12px}
  .orders-page .order-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
  .orders-page .order-kpis>div{padding:15px;min-height:86px}
- .orders-page .order-kpis small{font-size:10px}
+ .orders-page .order-kpis small{font-size:12px}
  .orders-page .order-kpis b{font-size:25px}
  .orders-page .order-filters{width:100%;overflow-x:auto;flex-wrap:nowrap}
- .orders-page .order-filters button{white-space:nowrap;font-size:12px;padding:10px 12px}
+ .orders-page .order-filters button{white-space:nowrap;font-size:14px;padding:10px 13px}
  .orders-page .panel{padding:16px 12px;border-radius:16px}
- .orders-page .panel-head h2{font-size:17px}
+ .orders-page .panel-head h2{font-size:19px}
  .orders-page .premium-order-table table{min-width:980px}
 }

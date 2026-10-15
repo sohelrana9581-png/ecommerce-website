@@ -59,3 +59,64 @@
  .orders-page .premium-order-table table{min-width:980px}
  .orders-page .premium-order-table th{font-size:18px;padding:17px 12px}
 }
+
+/* Fix order popup sizing/centering against the generic modal !important rules */
+.modal-backdrop.order-detail-modal-backdrop{
+  position:fixed!important;
+  inset:0!important;
+  width:100vw!important;
+  height:100dvh!important;
+  min-height:100dvh!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:20px!important;
+  margin:0!important;
+  overflow:auto!important;
+  box-sizing:border-box!important;
+  z-index:10000!important;
+}
+.modal-backdrop.order-detail-modal-backdrop>.modal.order-detail-modal{
+  position:relative!important;
+  inset:auto!important;
+  top:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  left:auto!important;
+  transform:none!important;
+  flex:0 1 auto!important;
+  width:min(1460px,calc(100vw - 40px))!important;
+  max-width:1460px!important;
+  height:auto!important;
+  max-height:calc(100dvh - 40px)!important;
+  margin:0 auto!important;
+  padding:24px 28px 22px!important;
+  box-sizing:border-box!important;
+  overflow:auto!important;
+  overscroll-behavior:contain;
+  border-radius:22px!important;
+}
+.modal-backdrop.order-detail-modal-backdrop>.modal.order-detail-modal>.modal-head{
+  position:sticky!important;
+  top:-24px!important;
+  z-index:12!important;
+  margin:-24px -28px 18px!important;
+  padding:17px 28px 15px!important;
+  background:rgba(255,255,255,.98)!important;
+}
+@media(max-width:700px){
+  .modal-backdrop.order-detail-modal-backdrop{padding:8px!important;align-items:center!important}
+  .modal-backdrop.order-detail-modal-backdrop>.modal.order-detail-modal{
+    width:calc(100vw - 16px)!important;
+    max-width:calc(100vw - 16px)!important;
+    max-height:calc(100dvh - 16px)!important;
+    padding:16px!important;
+    border-radius:16px!important;
+  }
+  .modal-backdrop.order-detail-modal-backdrop>.modal.order-detail-modal>.modal-head{
+    top:-16px!important;
+    margin:-16px -16px 14px!important;
+    padding:13px 16px!important;
+  }
+}
+

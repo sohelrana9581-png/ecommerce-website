@@ -29,7 +29,7 @@
 .orders-page .panel-head h2{font-size:23px}
 .orders-page .panel-count{font-size:13px;padding:5px 10px}
 .orders-page .premium-order-table table{min-width:1060px;font-size:16px}
-.orders-page .premium-order-table th{font-size:18px;padding:19px 15px;line-height:1.35;font-weight:700}
+.orders-page .premium-order-table th{font-size:21px;padding:21px 15px;line-height:1.4;font-weight:750}
 .orders-page .premium-order-table td{padding:19px 15px;font-size:16px}
 .orders-page .customer-order-cell{gap:5px}
 .orders-page .customer-order-cell b{font-size:17px}
@@ -57,5 +57,5 @@
  .orders-page .panel{padding:16px 12px;border-radius:16px}
  .orders-page .panel-head h2{font-size:19px}
  .orders-page .premium-order-table table{min-width:980px}
- .orders-page .premium-order-table th{font-size:16px;padding:16px 12px}
+ .orders-page .premium-order-table th{font-size:18px;padding:17px 12px}
 }
